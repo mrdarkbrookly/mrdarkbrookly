@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Узнать IP-адрес</title>
+</head>
+<body>
+    <h1>Узнать IP-адрес</h1>
+    <button onclick="getIpAddress()">Узнать IP-адрес</button>
+    <p id="ip-address"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ipinfo.io/2.0.7/ipinfo.min.js"></script>
+
+    <script>
+        function getIpAddress() {
+            // Получить IP-адрес пользователя
+            const ip = ipinfo.getIp();
+
+            // Вывести IP-адрес на страницу
+            document.getElementById("ip-address").innerHTML = ip;
+        }
+    </script>
+</body>
+</html>
