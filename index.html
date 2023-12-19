@@ -2,21 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Узнать IP-адрес</title>
+    <title>Г“Г§Г­Г ГІГј IP-Г Г¤Г°ГҐГ±</title>
 </head>
 <body>
-    <h1>Узнать IP-адрес</h1>
-    <button onclick="getIpAddress()">Узнать IP-адрес</button>
+    <h1>Г“Г§Г­Г ГІГј IP-Г Г¤Г°ГҐГ±</h1>
+    <button onclick="getIpAddress()">Г“Г§Г­Г ГІГј IP-Г Г¤Г°ГҐГ±</button>
     <p id="ip-address"></p>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ipinfo.io/2.0.7/ipinfo.min.js"></script>
 
     <script>
         function getIpAddress() {
-            // Получить IP-адрес пользователя
+            // ГЏГ®Г«ГіГ·ГЁГІГј IP-Г Г¤Г°ГҐГ± ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї
             const ip = ipinfo.getIp();
 
-            // Вывести IP-адрес на страницу
+            // Г‚Г»ГўГҐГ±ГІГЁ IP-Г Г¤Г°ГҐГ± Г­Г  Г±ГІГ°Г Г­ГЁГ¶Гі
             document.getElementById("ip-address").innerHTML = ip;
         }
     </script>
